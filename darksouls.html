@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Souls — Tu sitio de opinión</title>
+    <meta name="author" content="wilkin trinidad">
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="Dark Souls, FromSoftware, soulslike, RPG, videojuegos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="./controller.svg">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="dark-mode d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="./index.html">Inicio</a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">otras paginas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contacto</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </nav>
+
+    <h2 class="text-center my-4 text-white m-5" id="home">Dark Souls: La saga que definió los "souls"</h2>
+    <img src="./imagenes/DarkSouls.jpeg" class="img-fluid p-5" alt="portada de Dark Souls">
+
+    <div class="conteiner">
+
+
+        <p class="mx-5 text-white">Dark Souls es una serie de videojuegos de acción-RPG desarrollada por FromSoftware
+            y dirigida originalmente por Hidetaka Miyazaki. Lanzado en 2009, el primer Dark Souls (y su predecesor
+            espiritual Demon's Souls) definieron un subgénero conocido como "souls" por su dificultad, diseño de niveles
+            interconectado y narración ambiental.</p>
+        <p class="mx-5 text-white">Los jugadores exploran entornos góticos y peligrosos, enfrentándose a enemigos
+            desafiantes y jefes memorables. La gestión de recursos, la elección entre mejorar equipo o recuperar almas y
+            el riesgo permanente de perder progreso hacen que cada encuentro sea significativo.</p>
+        <p class="mx-5 text-white">Dark Souls destaca por su atmósfera opresiva, su lore críptico contado a través de
+            descripciones de objetos y el entorno, y por la satisfacción que produce superar retos difíciles. Desde su
+            lanzamiento ha influido a muchos títulos posteriores y ha generado una comunidad apasionada.</p>
+        <p class="mx-5 text-white">Mi recomendación: juega con paciencia, aprende los patrones de los enemigos y
+            explora cada rincón: Dark Souls premia la curiosidad y la perseverancia.</p>
+        <a href="https://es.wikipedia.org/wiki/Dark_Souls">Más información en Wikipedia sobre Dark Souls</a>
+    </div>
+
+    <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" width="auto"
+            height="500px" src="https://www.youtube.com/watch?v=Woe0PYZPxRw"
+            title="Trailer de Dark Souls" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            <caption>Trailer de Dark Souls</caption>
+        </iframe></div>
+
+    <div class="container text-center my-4">
+        <button type="button" id="curiosidad" class="btn btn-info" data-bs-toggle="modal"
+            data-bs-target="#miModalDeEjemplo">
+            curiosidad
+        </button>
+    </div>
+
+    <div class="modal fade" id="miModalDeEjemplo" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitulo">¿Quién desarrolló Dark Souls?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    Dark Souls fue desarrollado por FromSoftware, un estudio japonés. El director creativo original fue
+                    Hidetaka Miyazaki. El mundo y la narrativa se construyen de forma indirecta: mucha información se
+                    revela a través de descripciones de objetos, diálogos crípticos y la propia exploración del jugador.
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Entendido
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="./logic.js"></script>
+    <footer class="dark-mode mt-auto text-center text-white mt-10">
+        <p>&copy; 2025 Tu Real gaming. Todos los derechos reservados.</p>
+        <p>correo: <a mailto href="mailto:wilkintrinidad10@gmail.com">wilkintrinidad10@gmail.com</a>
+        <p>
+            <a href="./Privacidad.html">Politica de privacidad</a>
+        <p> redes:
+            <a href="https://www.facebook.com/wilkin.trinidad.7" class="text-white"><i class="bi bi-facebook"></i>
+                facebook</a>
+            <a href="https://www.youtube.com/watch?v=LMYK048DRVE" class="text-white">youtube</a>
+        </p>
+        <p><a href="#home" class="text-white">Volver al inicio</a></p>
+
+    </footer>
+</body>
+
+</html>
