@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Real gaming </title>
+    <meta name="author" content="wilkin trinidad">
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="videos juegos, juegos en linea, juegos gratis">
+    <meta name="viewport" content="witd">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="./controller.svg">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body class="light-mode d-flex flex-column min-vh-100">
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- Botón modo oscuro -->
+            <button class="btn btn-outline-primary me-2" onclick="toggleDarkMode()">
+                <i class="bi bi-moon-stars"></i>
+            </button>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <h2 class="text-center my-4 text-dark m-5" id="home">Tu Real gaming </h2>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">otras paginas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info">contacto</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </nav>
+
+
+
+
+    <div class="container">
+        <h1 class="text-center mb-5" style="color: var(--color-acento);">
+            🎮 Noticias Destacadas
+        </h1>
+
+        <!-- INICIO DEL CARRUSEL DE BOOTSTRAP -->
+        <div id="heroCarousel" class="carousel slide rounded-lg shadow-lg" data-bs-ride="carousel">
+            
+            <!-- 1. INDICADORES (Puntos de Navegación Inferiores) -->
+            <div class="carousel-indicators">
+                <!-- El primer indicador debe tener la clase 'active' -->
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- 2. CONTENIDO DEL CARRUSEL -->
+            <div class="carousel-inner rounded-3">
+                
+                <!-- Artículo 1: Noticia Principal (Debe tener la clase 'active') -->
+                <div class="carousel-item active">
+                    <a href="./darksouls.html">
+                    <!-- Imagen de ejemplo 1 -->
+                    <img src="./imagenes/DarkSouls.jpeg" class="d-block w-100 img-fluid" alt="Anuncio AAA">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-4">critica a dark souls</h5>
+                        <p>el mejuego de fantasia oscura</p>
+                    </div>
+                </div>
+
+
+
+                <!-- Artículo 3: E-Sports -->
+                <div class="carousel-item">
+                    <a href="./Darkwood.html">
+                    <!-- Imagen de ejemplo 3 -->
+                    <img src="./imagenes/darkwood.jpg" class="d-block w-100 img-fluid" alt="E-Sports">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-4">darkwood</h5>
+                        <p>El mejor juego de terror </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. CONTROLES (Flechas de Anterior/Siguiente) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <!-- FIN DEL CARRUSEL DE BOOTSTRAP -->
+
+        <!-- Sección de Noticias con Acordeón -->
+        <div class="accordion mt-5" id="newsAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        Últimas Noticias de Gaming
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#newsAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="./darksouls.html">Dark Souls - Análisis Completo</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="./Darkwood.html">Darkwood - Terror en Estado Puro</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carga de Bootstrap JS Bundle (Contiene la lógica para el carrusel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <footer class="bgDark mt-auto text-center text-white" id="info">
+        <p>&copy; 2024 Tu Real gaming. Todos los derechos reservados.</p>
+        <p>correo: <a href="mailto:wilkintrinidad10@gmail.com">wilkintrinidad10@gmail.com</a>
+        <p>
+            <a href="./Privacidad.html">Politica de privacidad</a>
+        <p> redes:
+            <a href="https://www.facebook.com/wilkin.trinidad.7" class="text-white"><i class="bi bi-facebook"></i>
+                facebook</a>
+            <a href="https://www.youtube.com/watch?v=LMYK048DRVE" class="text-white">youtube</a>
+        </p>
+        <p><a href="#home" class="text-white">Volver al inicio</a></p>
+
+    </footer>
+
+    <button type="button" id="brnCuriosidad"> quien es el autor ?</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="./logic.js"></script>
+</body>
+
+</html>

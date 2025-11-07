@@ -1,0 +1,51 @@
+:root {
+    --background-light: rgb(117, 183, 241);
+    --background-dark: #121212;
+    --text-light: #000000;
+    --text-dark: #ffffff;
+}
+
+/* Modo claro (default) */
+.light-mode {
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+/* Modo oscuro */
+.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+}
+
+/* Estilos para la navegación */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.dark-mode .navbar {
+    background-color: #1a1a1a !important;
+    color: var(--text-dark);
+}
+
+/* Efectos hover */
+.nav-link:hover {
+    color: #0d6efd !important;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+}
+:root {
+    --bs-body-font-family: 'Open Sans', sans-serif;
+    
+}
+button:hover{
+    background-color: rgb(117, 183, 241);
+    color: rgb(26, 2, 2);
+          
+}
